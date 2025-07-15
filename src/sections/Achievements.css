@@ -1,0 +1,23 @@
+.achievements-section {
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}
+
+.achievement-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.achievement-list li {
+  margin: 15px 0;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 12px 20px;
+  border-left: 4px solid #cd5ff8;
+  box-shadow: 0 0 8px #cd5ff8;
+  border-radius: 5px;
+  text-align: left;
+}

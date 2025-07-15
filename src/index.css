@@ -1,13 +1,100 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding-top: 80px; /* ✅ required to prevent overlap */
+  background-image: url('/src/assets/bg.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  padding-top: 80px; /* Required to avoid content hidden behind fixed navbar */
+  scroll-behavior: smooth;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+
+  min-height: 100vh;
+  color: white;
+}
+html, body {
+  height: 100%;
+}
+@media (max-width: 768px) {
+  /* Center logo and toggle button */
+  .navbar .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    gap: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  /* Home / About responsiveness */
+  .home-container, .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-text, .about-text, .about-image {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Timeline layout becomes vertical */
+  .timeline-container {
+    flex-direction: column;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 20px 0;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  /* Projects: fewer items visible */
+  .project-slider {
+    overflow-x: scroll;
+  }
+
+  .project-card {
+    min-width: 90%;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }

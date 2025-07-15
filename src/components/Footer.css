@@ -1,0 +1,32 @@
+.footer {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  backdrop-filter: blur(6px);
+  margin-top: 100px;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #cd5ff8;
+}
+
+.footer-links a {
+  margin: 0 12px;
+  font-size: 1.8rem;
+  color: #cd5ff8;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.footer p {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}

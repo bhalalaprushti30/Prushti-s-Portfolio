@@ -1,0 +1,46 @@
+/* Make sure this targets the right element */
+.custom-navbar {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #cd5ff8 !important;
+  text-shadow: 0 0 5px rgba(205, 95, 248, 0.5);
+}
+
+/* Apply to nav-links only inside the navbar-nav */
+.navbar-nav .nav-link {
+  position: relative;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: white !important;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+/* Underline effect on hover */
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #cd5ff8;
+  transition: width 0.3s ease;
+}
+
+/* Hover color and underline expand */
+.navbar-nav .nav-link:hover {
+  color: #cd5ff8 !important;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
